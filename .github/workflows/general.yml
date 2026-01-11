@@ -13,7 +13,7 @@ jobs:
   # Unique identifier of our job (`job_id`)
   test:
     # Sets the name `Test` for the job, which is displayed in the GitHub UI
-    name: Test
+    name: test
     # Containers must run in Linux based operating systems
     runs-on: ubuntu-latest
     steps:
