@@ -1,8 +1,8 @@
-# Planning Stage
-FROM lukemathwalker/cargo-chef:latest-rust-1.80.1 AS chef
+FROM lukemathwalker/cargo-chef:latest-rust-1.93 AS chef
 WORKDIR /app
 RUN apt update && apt install lld clang -y
 
+# Planning Stage
 FROM chef AS planner
 COPY . .
 # Computer a lock-like file for project
